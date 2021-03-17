@@ -3,6 +3,7 @@ import 'package:flutter_app/pages/Login.dart';
 import 'package:flutter_app/utils/Routes.dart';
 import 'package:flutter_app/wdgets/MyThemes.dart';
 import 'pages/HomePage.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 
 
@@ -10,6 +11,8 @@ void main(){
   runApp(MyApp());
 }
 
+
+//day 15
 class MyApp  extends StatelessWidget{
 
   @override
@@ -21,7 +24,7 @@ class MyApp  extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       darkTheme: MyThemes.darkTheme(context), //dark theme properties
 
-     initialRoute: MyAppRoutes.homeRoute, //starting position of the application, app start from default route but land on "initialRoute"
+      initialRoute: MyAppRoutes.homeRoute, //starting position of the application, app start from default route but land on "initialRoute"
       routes:{
         "/":(context)=> LoginPage(), //default route
         MyAppRoutes.homeRoute:(context)=> HomePage(),
@@ -29,4 +32,14 @@ class MyApp  extends StatelessWidget{
       },
     );
   }
+
 }
+
+
+
+
+
+
+
+
+
